@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript DOM</title>
+  </head>
+  <body>
+    <form action="" class="login-form">
+      <label for="">Email</label>
+      <input type="text" class="form-input" />
+      <label for="">Password</label>
+      <input type="password" id="form-input" />
+      <button type="submit" id="btn-login">Login</button>
+    </form>
+  </body>
+  <script>
+    console.log(document.title);
+    console.log(`Tinggi ukuran browser: ${window.innerHeight}`);
+    console.log(`Lebar ukuran browser: ${window.innerWidth}`);
+
+    const button = document.getElementById("btn-login");
+    console.log(button);
+
+    const loginForm = document.querySelector(".login-form");
+    console.log(loginForm);
+
+    const formInput = document.getElementsByClassName("form-input");
+    console.log(formInput);
+  </script>
+</html>
